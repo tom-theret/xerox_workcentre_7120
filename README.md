@@ -15,4 +15,11 @@ PPD for printing with a Xerox WorkCentre 7120 machine which has no PostScript mo
 
 </span>
 
+## Roadmap
 
+- [x] Create the repo
+- [ ] Create the first working driver
+- [ ] Post the driver
+- [ ] Upgrade fonctionnality
+
+## How to build this project
