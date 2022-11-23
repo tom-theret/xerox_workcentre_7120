@@ -1,5 +1,5 @@
 <span align="center">
-
+<img src="https://www.xerox.com/assets/images/1200_layout/products/hardware/WC7120/hero-640x440.png">
 # Xerox Workcentre 7120
 
 <a href="https://discord.gg/Qp4GNyX"><img title="Crash EVN" src="https://badgen.net/discord/members/Qp4GNyX"></a>
