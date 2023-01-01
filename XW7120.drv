@@ -1,0 +1,23 @@
+// Include necessary files...
+#include <font.defs>
+#include <media.defs>
+
+// Essential information
+
+{   
+    Copyright "Create by Tom Theret"
+
+    // Printer information
+    Manufacturer "Xerox"
+    ModelName "WorkCentre 7120"
+    PCFileName "XW7120.PPD"
+    Version "1.1"
+    DriverType ps
+    ModelNumber 2
+    ManualCopies Yes
+    ColorDevice Yes
+    Attribute "NickName" "" "Xerox WorkCentre 7120"
+    Attribute "ShortNickName" "" "Xerox WorkCentre 7120"
+    Attribute "Product" "" "(WorkCentre 7120)"
+}
+
