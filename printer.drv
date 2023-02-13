@@ -1,0 +1,423 @@
+// CUPS PPD Compiler CUPS v2.3.4
+
+// Include necessary files...
+#include <font.defs>
+#include <media.defs>
+
+// Generic PCL 6/PCL XL Printer
+{
+  Copyright "" Copyright "For information on using this, and to obtain the required backend" Copyright "script, consult http://www.openprinting.org/" Copyright "" Copyright "This file is published under the GNU General Public License" Copyright "" Copyright "PPD-O-MATIC (4.0.0 or newer) generated this PPD file. It is for use with" Copyright "all programs and environments which use PPD files for dealing with" Copyright "printer capability information. The printer must be configured with the" Copyright "\"foomatic-rip\" backend filter script of Foomatic 4.0.0 or newer. This" Copyright "file and \"foomatic-rip\" work together to support PPD-controlled printer" Copyright "driver option access with all supported printer drivers and printing" Copyright "spoolers." Copyright "" Copyright "To save this file on your disk, wait until the download has completed" Copyright "(the animation of the browser logo must stop) and then use the" Copyright "\"Save as...\" command in the \"File\" menu of your browser or in the" Copyright "pop-up manu when you click on this document with the right mouse button." Copyright "DO NOT cut and paste this file into an editor with your mouse. This can" Copyright "introduce additional line breaks which lead to unexpected results." Copyright "" Copyright "You may save this file as 'Generic-PCL_6_PCL_XL_Printer-pxlcolor.ppd'" Copyright "" Copyright "" Manufacturer "Generic" ModelName "PCL 6/PCL XL Printer" PCFileName "PXLCOLOR.PPD" Version "1.1" DriverType ps
+      ModelNumber 2 ManualCopies Yes
+          ColorDevice Yes
+              Throughput 1 Attribute "NickName"
+                                     ""
+                                     "Generic PCL 6/PCL XL Printer Foomatic/pxlcolor (recommended)" Attribute "ShortNickName"
+                                     ""
+                                     "Gener. PCL 6/PCL XL P. pxlcolor" Attribute "Product"
+                                     ""
+                                     "(PCL 6/PCL XL Printer)" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 550" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 651" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 652" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 653" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 704" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 705" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 800" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 815" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 850" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 860" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 861" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 862" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 863" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 864" Attribute "PSVersion"
+                                     ""
+                                     "(3010.000) 870" Attribute "LanguageLevel"
+                                     ""
+                                     "3" Attribute "DefaultColorSpace"
+                                     ""
+                                     "RGB" Attribute "FileSystem"
+                                     ""
+                                     "False" Attribute "LandscapeOrientation"
+                                     ""
+                                     "Plus90" Attribute "TTRasterizer"
+                                     ""
+                                     "Type42" Attribute "1284DeviceID"
+                                     ""
+                                     "DRV:Dpxlcolor,R1,M0,TG;" Attribute "driverName"
+                                     "pxlcolor"
+                                     "" Attribute "driverType"
+                                     "G/Ghostscript built-in"
+                                     "" Attribute "driverUrl"
+                                     ""
+                                     "http://www.ghostscript.com/" Attribute "driverObsolete"
+                                     ""
+                                     "False" Attribute "driverManufacturerSupplied"
+                                     ""
+                                     "False" Attribute "DefaultResolution"
+                                     ""
+                                     "1200dpi" Attribute "NonUIOrderDependency"
+                                     ""
+                                     "100 AnySetup *CustomPageSize" Attribute "FoomaticRIPOptionSetting"
+                                     "PageSize=Custom"
+                                     " -dDEVICEWIDTHPOINTS=0 -dD&&
+      EVICEHEIGHTPOINTS = 0 "
+                              Attribute "FoomaticIDs"
+                            ""
+                            "Generic-PCL_6_PCL_XL_Printer pxlcolor" Attribute "FoomaticRIPCommandLine"
+                            ""
+                            "gs -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNO&&
+                              INTERPOLATE %
+                              B % A % Z -
+                          sOutputFile = - -"
+                                          Attribute "FoomaticRIPOption"
+                                           "PrintoutMode"
+                                           "enum Composite A" Attribute "FoomaticRIPOptionSetting"
+                                           "PrintoutMode=Draft"
+                                           "PrinterResolution=600x6&&
+                                          00dpi ColorModel = Color "
+      Attribute "FoomaticRIPOptionSetting"
+                                                                   "PrintoutMode=Draft.Gray"
+                                                                   "PrinterResolution=&&
+      600x600dpi ColorModel = Grayscale "
+      Attribute "FoomaticRIPOptionSetting"
+                                        "PrintoutMode=Normal"
+                                        "PrinterResolution=600x&&
+      600dpi ColorModel = Color "
+      Attribute "FoomaticRIPOptionSetting"
+                                "PrintoutMode=Normal.Gray"
+                                "PrinterResolution&&
+      = 600x600dpi ColorModel = Grayscale "
+      Attribute "FoomaticRIPOptionSetting"
+                                          "PrintoutMode=High"
+                                          "PrinterResolution=1200x1&&
+      200dpi ColorModel = Color "
+      Attribute "FoomaticRIPOptionSetting"
+                                "PrintoutMode=High.Gray"
+                                "PrinterResolution=1&&
+      200x1200dpi ColorModel = Grayscale "
+      Attribute "FoomaticRIPOption"
+                                         "PageSize"
+                                         "enum CmdLine A" Attribute "FoomaticRIPOptionSetting"
+                                         "PageSize=Letter"
+                                         " -dDEVICEWIDTHPOINTS=612 -&&
+      dDEVICEHEIGHTPOINTS = 792 "
+      Attribute "FoomaticRIPOptionSetting"
+                                "PageSize=A4"
+                                " -dDEVICEWIDTHPOINTS=595 -dDEV&&
+      ICEHEIGHTPOINTS = 842 "
+      Attribute "FoomaticRIPOptionSetting"
+                            "PageSize=11x17"
+                            " -dDEVICEWIDTHPOINTS=792 -d&&
+      DEVICEHEIGHTPOINTS = 1224 "
+      Attribute "FoomaticRIPOptionSetting"
+                                "PageSize=A3"
+                                " -dDEVICEWIDTHPOINTS=842 -dDEV&&
+      ICEHEIGHTPOINTS = 1191 "
+      Attribute "FoomaticRIPOptionSetting"
+                             "PageSize=A5"
+                             " -dDEVICEWIDTHPOINTS=421 -dDEV&&
+      ICEHEIGHTPOINTS = 595 "
+      Attribute "FoomaticRIPOptionSetting"
+                            "PageSize=B5"
+                            " -dDEVICEWIDTHPOINTS=516 -dDEV&&
+      ICEHEIGHTPOINTS = 729 "
+      Attribute "FoomaticRIPOptionSetting"
+                            "PageSize=Env10"
+                            " -dDEVICEWIDTHPOINTS=297 -d&&
+      DEVICEHEIGHTPOINTS = 684 "
+      Attribute "FoomaticRIPOptionSetting"
+                               "PageSize=EnvC5"
+                               " -dDEVICEWIDTHPOINTS=459 -d&&
+      DEVICEHEIGHTPOINTS = 649 "
+      Attribute "FoomaticRIPOptionSetting"
+                               "PageSize=EnvDL"
+                               " -dDEVICEWIDTHPOINTS=312 -d&&
+      DEVICEHEIGHTPOINTS = 624 "
+                           Attribute "FoomaticRIPOptionSetting"
+                               "PageSize=EnvISOB5"
+                               " -dDEVICEWIDTHPOINTS=499&&
+                           - dDEVICEHEIGHTPOINTS = 709 "
+                                                   Attribute "FoomaticRIPOptionSetting"
+                                                       "PageSize=EnvMonarch"
+                                                       " -dDEVICEWIDTHPOINTS=2&&
+                                                   79 -
+                                                   dDEVICEHEIGHTPOINTS = 540 "
+                                                                         Attribute "FoomaticRIPOptionSetting"
+                                                                             "PageSize=Executive"
+                                                                             " -dDEVICEWIDTHPOINTS=52&&
+                                                                         2 -
+                                                                         dDEVICEHEIGHTPOINTS = 756 "
+      Attribute "FoomaticRIPOptionSetting"
+                                                                                                   "PageSize=Legal"
+                                                                                                   " -dDEVICEWIDTHPOINTS=612 -d&&
+      DEVICEHEIGHTPOINTS = 1008 "
+      Attribute "FoomaticRIPOption"
+                                "InputSlot"
+                                "enum CmdLine A" Attribute "FoomaticRIPOptionSetting"
+                                "InputSlot=Default"
+                                " -dMediaPosition=0" Attribute "FoomaticRIPOptionSetting"
+                                "InputSlot=Upper"
+                                " -dMediaPosition=4" Attribute "FoomaticRIPOptionSetting"
+                                "InputSlot=Middle"
+                                " -dMediaPosition=5" Attribute "FoomaticRIPOptionSetting"
+                                "InputSlot=Lower"
+                                " -dMediaPosition=6" Attribute "FoomaticRIPOptionSetting"
+                                "InputSlot=Multipurpose"
+                                " -dMediaPosition=3" Attribute "FoomaticRIPOptionSetting"
+                                "InputSlot=Automatic"
+                                " -dMediaPosition=1" Attribute "FoomaticRIPOptionSetting"
+                                "InputSlot=Manual"
+                                " -dMediaPosition=2" Attribute "FoomaticRIPOption"
+                                "Duplex"
+                                "enum CmdLine A" Attribute "FoomaticRIPOptionSetting"
+                                "Duplex=DuplexNoTumble"
+                                " -dDuplex" Attribute "FoomaticRIPOptionSetting"
+                                "Duplex=DuplexTumble"
+                                " -dDuplex -dTumble" Attribute "FoomaticRIPOptionSetting"
+                                "Duplex=None"
+                                "" Attribute "FoomaticRIPOption"
+                                "ColorModel"
+                                "enum CmdLine B" Attribute "FoomaticRIPOptionSetting"
+                                "ColorModel=Color"
+                                " -sDEVICE=pxlcolor" Attribute "FoomaticRIPOptionSetting"
+                                "ColorModel=Grayscale"
+                                " -sDEVICE=pxlmono" Attribute "FoomaticRIPOption"
+                                "PrinterResolution"
+                                "enum CmdLine A" Attribute "FoomaticRIPOptionSetting"
+                                "PrinterResolution=300x300dpi"
+                                " -r300x300" Attribute "FoomaticRIPOptionSetting"
+                                "PrinterResolution=600x600dpi"
+                                " -r600x600" Attribute "FoomaticRIPOptionSetting"
+                                "PrinterResolution=1200x600dpi"
+                                " -r1200x600" Attribute "FoomaticRIPOptionSetting"
+                                "PrinterResolution=1200x1200dpi"
+                                " -r1200x120&&
+      0 "
+      Filter "application/vnd.cups-postscript 100 foomatic-rip" Filter "application/vnd.cups-pdf 0 foomatic-rip" Font "AvantGarde-Book"
+        "Standard"
+        "(001.006S)"
+        "Standard" ROM
+            Font "AvantGarde-BookOblique"
+        "Standard"
+        "(001.006S)"
+        "Standard" ROM
+            Font "AvantGarde-Demi"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "AvantGarde-DemiOblique"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Bookman-Demi"
+        "Standard"
+        "(001.004S)"
+        "Standard" ROM
+            Font "Bookman-DemiItalic"
+        "Standard"
+        "(001.004S)"
+        "Standard" ROM
+            Font "Bookman-Light"
+        "Standard"
+        "(001.004S)"
+        "Standard" ROM
+            Font "Bookman-LightItalic"
+        "Standard"
+        "(001.004S)"
+        "Standard" ROM
+            Font "Courier"
+        "Standard"
+        "(002.004S)"
+        "Standard" ROM
+            Font "Courier-Bold"
+        "Standard"
+        "(002.004S)"
+        "Standard" ROM
+            Font "Courier-BoldOblique"
+        "Standard"
+        "(002.004S)"
+        "Standard" ROM
+            Font "Courier-Oblique"
+        "Standard"
+        "(002.004S)"
+        "Standard" ROM
+            Font "Helvetica"
+        "Standard"
+        "(001.006S)"
+        "Standard" ROM
+            Font "Helvetica-Bold"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Helvetica-BoldOblique"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Helvetica-Narrow"
+        "Standard"
+        "(001.006S)"
+        "Standard" ROM
+            Font "Helvetica-Narrow-Bold"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Helvetica-Narrow-BoldOblique"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Helvetica-Narrow-Oblique"
+        "Standard"
+        "(001.006S)"
+        "Standard" ROM
+            Font "Helvetica-Oblique"
+        "Standard"
+        "(001.006S)"
+        "Standard" ROM
+            Font "NewCenturySchlbk-Bold"
+        "Standard"
+        "(001.009S)"
+        "Standard" ROM
+            Font "NewCenturySchlbk-BoldItalic"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "NewCenturySchlbk-Italic"
+        "Standard"
+        "(001.006S)"
+        "Standard" ROM
+            Font "NewCenturySchlbk-Roman"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Palatino-Bold"
+        "Standard"
+        "(001.005S)"
+        "Standard" ROM
+            Font "Palatino-BoldItalic"
+        "Standard"
+        "(001.005S)"
+        "Standard" ROM
+            Font "Palatino-Italic"
+        "Standard"
+        "(001.005S)"
+        "Standard" ROM
+            Font "Palatino-Roman"
+        "Standard"
+        "(001.005S)"
+        "Standard" ROM
+            Font "Symbol"
+        "Special"
+        "(001.007S)"
+        "Special" ROM
+            Font "Times-Bold"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Times-BoldItalic"
+        "Standard"
+        "(001.009S)"
+        "Standard" ROM
+            Font "Times-Italic"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "Times-Roman"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "ZapfChancery-MediumItalic"
+        "Standard"
+        "(001.007S)"
+        "Standard" ROM
+            Font "ZapfDingbats"
+        "Special"
+        "(001.004S)"
+        "Standard" ROM
+            Group "General/General" Option "PrintoutMode/Print Quality" PickOne AnySetup 10,
+      0 Choice "Draft/Draft"
+               "%% FoomaticRIPOptionSetting: PrintoutMode=Draft" Choice "Draft.Gray/Draft Grayscale"
+               "%% FoomaticRIPOptionSetting: PrintoutMode=Draft.Gray" *
+          Choice "Normal/Normal"
+                 "%% FoomaticRIPOptionSetting: PrintoutMode=Normal" Choice "Normal.Gray/Normal Grayscale"
+                 "%% FoomaticRIPOptionSetting: PrintoutMode=Normal.Gray" Choice "High/High Quality"
+                 "%% FoomaticRIPOptionSetting: PrintoutMode=High" Choice "High.Gray/High Quality Grayscale"
+                 "%% FoomaticRIPOptionSetting: PrintoutMode=High.Gray" Option "InputSlot/Media Source" PickOne AnySetup 100,
+      0 * Choice "Default/Printer Default"
+                 "%% FoomaticRIPOptionSetting: InputSlot=Default" Choice "Upper/Upper Tray"
+                 "%% FoomaticRIPOptionSetting: InputSlot=Upper" Choice "Middle/Middle Tray"
+                 "%% FoomaticRIPOptionSetting: InputSlot=Middle" Choice "Lower/Lower Tray"
+                 "%% FoomaticRIPOptionSetting: InputSlot=Lower" Choice "Multipurpose/Multipurpose Tray"
+                 "%% FoomaticRIPOptionSetting: InputSlot=Multipurpose" Choice "Automatic/Automatic"
+                 "%% FoomaticRIPOptionSetting: InputSlot=Automatic" Choice "Manual/Manual Feeder"
+                 "%% FoomaticRIPOptionSetting: InputSlot=Manual" Option "Duplex/Double-Sided Printing" PickOne AnySetup 100,
+      0 Choice "DuplexNoTumble/On (Flip on Long Edge)"
+               "%% FoomaticRIPOptionSetting: Duplex=DuplexNoTumble" Choice "DuplexTumble/On (Flip on Short Edge)"
+               "%% FoomaticRIPOptionSetting: Duplex=DuplexTumble" *
+          Choice "None/Off"
+                 "%% FoomaticRIPOptionSetting: Duplex=None" Group "PrintoutMode/Printout Mode" Option "ColorModel/Color Mode" PickOne AnySetup 100,
+      0 * Choice "FromPrintoutMode/Controlled by 'Print Quality'"
+                 "%% FoomaticRIPOptionSetting: ColorModel=@PrintoutMode" Choice "Color/Color"
+                 "%% FoomaticRIPOptionSetting: ColorModel=Color" Choice "Grayscale/Monochrome"
+                 "%% FoomaticRIPOptionSetting: ColorModel=Grayscale" Option "PrinterResolution/Resolution" PickOne AnySetup 100,
+      0 * Choice "FromPrintoutMode/Controlled by 'Print Quality'"
+                 "%% FoomaticRIPOptionSetting: PrinterResolution=@PrintoutMode" Choice "300x300dpi/300x300 DPI"
+                 "%% FoomaticRIPOptionSetting: PrinterResolution=300x300dpi" Choice "600x600dpi/600x600 DPI"
+                 "%% FoomaticRIPOptionSetting: PrinterResolution=600x600dpi" Choice "1200x600dpi/1200x600 DPI"
+                 "%% FoomaticRIPOptionSetting: PrinterResolution=1200x600dpi" Choice "1200x1200dpi/1200x1200 DPI"
+                 "%% FoomaticRIPOptionSetting: PrinterResolution=1200x1200dpi" Group "JCL/JCL" Option "JCLAccounting/Accounting" PickOne JCLSetup 10,
+      1 Choice "XSADisabled/Disabled"
+               ""
+                   *Choice "XSAUser/XSA User Based Accounting"
+                           "@PJL XCPT <?xml version=\"1.0\" encoding=\"UTF-8\"?>
+          @PJL XCPT < !DOCTYPE xpif SYSTEM \"xpif-v02074.dtd\">
+                      @PJL XCPT < xpif version =\"1.0\" cpss-version=\"2.07\" xml:lang=\"en-US\">
+                                                @PJL XCPT<job - template - attributes> @PJL XCPT < client - default - attributes - col syntax =\"collection\">
+                                                                                                                                               @PJL XCPT < job - accounting - user - id syntax =\"name\" xml:space=\"preserve\">XXXXYOURPASSWORDHEREXXXX</job-accounting-user-id>
+                                                                                                                                                                                                @PJL XCPT < job - accounting - user - passcode syntax =\"octetString\"></job-accounting-user-passcode>
+                                                                                                                                                                                                                                                       @PJL XCPT < job - accounting - user - passcode - encryption syntax =\"keyword\">xerox-simple-1</job-accounting-user-passcode-encryption>
+                                                                                                                                                                                                                                                                                                                           @PJL XCPT < job - billing - passcode - encryption syntax =\"keyword\">xerox-simple-1</job-billing-passcode-encryption>
+      @PJL XCPT</ client - default - attributes - col> @PJL XCPT</ job - template - attributes> @PJL XCPT</ xpif> "
+      CustomMedia "Letter/US Letter" 612,
+      00 792, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=Letter"
+                                             "%% FoomaticRIPOptionSetting: PageSize=Letter" *
+                                              CustomMedia "A4/A4" 595,
+      00 842, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=A4"
+                                             "%% FoomaticRIPOptionSetting: PageSize=A4" CustomMedia "11x17/11x17" 792,
+      00 1224, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=11x17"
+                                              "%% FoomaticRIPOptionSetting: PageSize=11x17" CustomMedia "A3/A3" 842,
+      00 1191, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=A3"
+                                              "%% FoomaticRIPOptionSetting: PageSize=A3" CustomMedia "A5/A5" 421,
+      00 595, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=A5"
+                                             "%% FoomaticRIPOptionSetting: PageSize=A5" CustomMedia "B5/B5 (JIS)" 516,
+      00 729, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=B5"
+                                             "%% FoomaticRIPOptionSetting: PageSize=B5" CustomMedia "Env10/Envelope #10" 297,
+      00 684, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=Env10"
+                                             "%% FoomaticRIPOptionSetting: PageSize=Env10" CustomMedia "EnvC5/Envelope C5" 459,
+      00 649, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=EnvC5"
+                                             "%% FoomaticRIPOptionSetting: PageSize=EnvC5" CustomMedia "EnvDL/Envelope DL" 312,
+      00 624, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=EnvDL"
+                                             "%% FoomaticRIPOptionSetting: PageSize=EnvDL" CustomMedia "EnvISOB5/Envelope B5" 499,
+      00 709, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=EnvISOB5"
+                                             "%% FoomaticRIPOptionSetting: PageSize=EnvISOB5" CustomMedia "EnvMonarch/Envelope Monarch" 279,
+      00 540, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=EnvMonarch"
+                                             "%% FoomaticRIPOptionSetting: PageSize=EnvMonarch" CustomMedia "Executive/Executive" 522,
+      00 756, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=Executive"
+                                             "%% FoomaticRIPOptionSetting: PageSize=Executive" CustomMedia "Legal/US Legal" 612,
+      00 1008, 00 18, 00 36, 00 18, 00 36, 00 "%% FoomaticRIPOptionSetting: PageSize=Legal"
+                                              "%% FoomaticRIPOptionSetting: PageSize=Legal" VariablePaperSize Yes HWMargins 18,
+      00 36, 00 18, 00 36, 00 MinSize 36, 00 36, 00 MaxSize 100000, 00 100000, 00
+}

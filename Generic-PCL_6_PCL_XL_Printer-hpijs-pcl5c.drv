@@ -1,0 +1,311 @@
+// CUPS PPD Compiler CUPS v2.3.4
+
+// Include necessary files...
+#include <font.defs>
+#include <media.defs>
+
+// Generic PCL 6/PCL XL Printer
+{
+  Copyright ""
+  Copyright "For information on using this, and to obtain the required backend"
+  Copyright "script, consult http://www.openprinting.org/"
+  Copyright ""
+  Copyright "This file is published under the GNU General Public License"
+  Copyright ""
+  Copyright "PPD-O-MATIC (4.0.0 or newer) generated this PPD file. It is for use with "
+  Copyright "all programs and environments which use PPD files for dealing with"
+  Copyright "printer capability information. The printer must be configured with the"
+  Copyright "\"foomatic-rip\" backend filter script of Foomatic 4.0.0 or newer. This "
+  Copyright "file and \"foomatic-rip\" work together to support PPD-controlled printer"
+  Copyright "driver option access with all supported printer drivers and printing"
+  Copyright "spoolers."
+  Copyright ""
+  Copyright "To save this file on your disk, wait until the download has completed"
+  Copyright "(the animation of the browser logo must stop) and then use the"
+  Copyright "\"Save as...\" command in the \"File\" menu of your browser or in the "
+  Copyright "pop-up manu when you click on this document with the right mouse button."
+  Copyright "DO NOT cut and paste this file into an editor with your mouse. This can"
+  Copyright "introduce additional line breaks which lead to unexpected results."
+  Copyright ""
+  Copyright "You may save this file as 'Generic-PCL_6_PCL_XL_Printer-hpijs-pcl5c.ppd'"
+  Copyright ""
+  Copyright ""
+  Manufacturer "Xerox"
+  ModelName "Xerox WorkCentre 7120"
+  PCFileName "XW7120.PPD"
+  Version "1.1"
+  DriverType ps
+  ModelNumber 2
+  ManualCopies Yes
+  ColorDevice Yes
+  Throughput 1
+  Attribute "NickName" "" "Xerox WorkCentre 7120"
+  Attribute "ShortNickName" "" "Xerox WorkCentre 7120"
+  Attribute "Product" "" "Xerox WorkCentre 7120"
+  Attribute "PSVersion" "" "(3010.000) 550"
+  Attribute "PSVersion" "" "(3010.000) 651"
+  Attribute "PSVersion" "" "(3010.000) 652"
+  Attribute "PSVersion" "" "(3010.000) 653"
+  Attribute "PSVersion" "" "(3010.000) 704"
+  Attribute "PSVersion" "" "(3010.000) 705"
+  Attribute "PSVersion" "" "(3010.000) 800"
+  Attribute "PSVersion" "" "(3010.000) 815"
+  Attribute "PSVersion" "" "(3010.000) 850"
+  Attribute "PSVersion" "" "(3010.000) 860"
+  Attribute "PSVersion" "" "(3010.000) 861"
+  Attribute "PSVersion" "" "(3010.000) 862"
+  Attribute "PSVersion" "" "(3010.000) 863"
+  Attribute "PSVersion" "" "(3010.000) 864"
+  Attribute "PSVersion" "" "(3010.000) 870"
+  Attribute "LanguageLevel" "" "3"
+  Attribute "DefaultColorSpace" "" "RGB"
+  Attribute "FileSystem" "" "False"
+  Attribute "LandscapeOrientation" "" "Plus90"
+  Attribute "TTRasterizer" "" "Type42"
+  Attribute "1284DeviceID" "" "DRV:Dhpijs-pcl5c,R0,M0,Sv,TI,X600,Y600,C1,t100,l100,g100,p100,s70;"
+  Attribute "driverName" "hpijs-pcl5c" "HP's HPIJS driver - PPDs for compatible PCL-5c-based non-HP color laser printers"
+  Attribute "driverType" "I/IJS" ""
+  Attribute "driverUrl" "" "http://hplipopensource.com/"
+  Attribute "driverObsolete" "" "False"
+  Attribute "driverSupplier" "" "Hewlett-Packard"
+  Attribute "driverManufacturerSupplied" "" "False"
+  Attribute "driverLicense" "" "BSD"
+  Attribute "driverSupportContactVoluntary" "" "https://launchpad.net/hplip HPLIP support and bug tracking system"
+  Attribute "driverMaxResolution" "" "600 600"
+  Attribute "driverColor" "" "True"
+  Attribute "driverTextSupport" "" "100"
+  Attribute "driverLineartSupport" "" "100"
+  Attribute "driverGraphicsSupport" "" "100"
+  Attribute "driverPhotoSupport" "" "100"
+  Attribute "driverRenderingSpeed" "" "70"
+  Attribute "DefaultResolution" "" "600dpi"
+  Attribute "NonUIOrderDependency" "" "105 AnySetup *CustomPageSize"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Custom" " -dDEVICEWIDTHPOINTS=0 -dD&&
+EVICEHEIGHTPOINTS=0"
+  Attribute "FoomaticIDs" "" "Generic-PCL_6_PCL_XL_Printer hpijs-pcl5c"
+  Attribute "FoomaticRIPCommandLine" "" "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPA&&
+USE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=ijs -sIjsServer=hpijs -sDe&&
+viceManufacturer=&quot;HEWLETT-PACKARD&quot; -sDeviceModel=&quot;hp co&&
+lor LaserJet&quot;%A%B%C -dIjsUseOutputFD%Z -sOutputFile=- -"
+  Attribute "FoomaticRIPOption" "PrintoutMode" "enum Composite B"
+  Attribute "FoomaticRIPOptionSetting" "PrintoutMode=Draft" "Quality=150DraftColorCM&&
+YK"
+  Attribute "FoomaticRIPOptionSetting" "PrintoutMode=Draft.Gray" "Quality=150DraftGr&&
+ayscaleCMYK"
+  Attribute "FoomaticRIPOptionSetting" "PrintoutMode=Normal" "Quality=300ColorCMYK"
+  Attribute "FoomaticRIPOptionSetting" "PrintoutMode=Normal.Gray" "Quality=300Graysc&&
+aleCMYK"
+  Attribute "FoomaticRIPOptionSetting" "PrintoutMode=High" "Quality=600BestColorCMYK&&
+"
+  Attribute "FoomaticRIPOptionSetting" "PrintoutMode=High.Gray" "Quality=600Grayscal&&
+eCMYK"
+  Attribute "FoomaticRIPOption" "InputSlot" "enum CmdLine C"
+  Attribute "FoomaticRIPOptionSetting" "InputSlot=Default" ",PS:MediaPosition=7"
+  Attribute "FoomaticRIPOptionSetting" "InputSlot=Upper" ",PS:MediaPosition=1"
+  Attribute "FoomaticRIPOptionSetting" "InputSlot=Lower" ",PS:MediaPosition=4"
+  Attribute "FoomaticRIPOptionSetting" "InputSlot=Envelope" ",PS:MediaPosition=3"
+  Attribute "FoomaticRIPOptionSetting" "InputSlot=LargeCapacity" ",PS:MediaPosition=&&
+5"
+  Attribute "FoomaticRIPOptionSetting" "InputSlot=Manual" ",PS:MediaPosition=2"
+  Attribute "FoomaticRIPOptionSetting" "InputSlot=MPTray" ",PS:MediaPosition=8"
+  Attribute "FoomaticRIPOption" "Duplex" "enum Composite A"
+  Attribute "FoomaticRIPOptionSetting" "Duplex=DuplexNoTumble" ""
+  Attribute "FoomaticRIPOptionSetting" "Duplex=DuplexTumble" ""
+  Attribute "FoomaticRIPOptionSetting" "Duplex=None" ""
+  Attribute "FoomaticRIPOption" "PageSize" "enum CmdLine A"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Letter" " -dDEVICEWIDTHPOINTS=612 -&&
+dDEVICEHEIGHTPOINTS=792"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=A4" " -dDEVICEWIDTHPOINTS=595 -dDEV&&
+ICEHEIGHTPOINTS=842"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Photo" " -dDEVICEWIDTHPOINTS=288 -d&&
+DEVICEHEIGHTPOINTS=432"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Photo5x7" " -dDEVICEWIDTHPOINTS=360&&
+ -dDEVICEHEIGHTPOINTS=504"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=3x5" " -dDEVICEWIDTHPOINTS=216 -dDE&&
+VICEHEIGHTPOINTS=360"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=5x8" " -dDEVICEWIDTHPOINTS=360 -dDE&&
+VICEHEIGHTPOINTS=576"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=A3" " -dDEVICEWIDTHPOINTS=842 -dDEV&&
+ICEHEIGHTPOINTS=1190"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=A5" " -dDEVICEWIDTHPOINTS=420 -dDEV&&
+ICEHEIGHTPOINTS=595"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=A6" " -dDEVICEWIDTHPOINTS=297 -dDEV&&
+ICEHEIGHTPOINTS=420"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=B4JIS" " -dDEVICEWIDTHPOINTS=729 -d&&
+DEVICEHEIGHTPOINTS=1033"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=B5JIS" " -dDEVICEWIDTHPOINTS=516 -d&&
+DEVICEHEIGHTPOINTS=729"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Env10" " -dDEVICEWIDTHPOINTS=297 -d&&
+DEVICEHEIGHTPOINTS=684"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=EnvC5" " -dDEVICEWIDTHPOINTS=459 -d&&
+DEVICEHEIGHTPOINTS=649"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=EnvC6" " -dDEVICEWIDTHPOINTS=323 -d&&
+DEVICEHEIGHTPOINTS=459"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=EnvDL" " -dDEVICEWIDTHPOINTS=312 -d&&
+DEVICEHEIGHTPOINTS=624"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=EnvISOB5" " -dDEVICEWIDTHPOINTS=499&&
+ -dDEVICEHEIGHTPOINTS=709"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=EnvMonarch" " -dDEVICEWIDTHPOINTS=2&&
+79 -dDEVICEHEIGHTPOINTS=540"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Executive" " -dDEVICEWIDTHPOINTS=52&&
+2 -dDEVICEHEIGHTPOINTS=756"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=FLSA" " -dDEVICEWIDTHPOINTS=612 -dD&&
+EVICEHEIGHTPOINTS=936"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Hagaki" " -dDEVICEWIDTHPOINTS=283 -&&
+dDEVICEHEIGHTPOINTS=420"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Ledger" " -dDEVICEWIDTHPOINTS=792 -&&
+dDEVICEHEIGHTPOINTS=1224"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Legal" " -dDEVICEWIDTHPOINTS=612 -d&&
+DEVICEHEIGHTPOINTS=1008"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=Oufuku" " -dDEVICEWIDTHPOINTS=420 -&&
+dDEVICEHEIGHTPOINTS=567"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=SuperB" " -dDEVICEWIDTHPOINTS=936 -&&
+dDEVICEHEIGHTPOINTS=1368"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=w558h774" " -dDEVICEWIDTHPOINTS=558&&
+ -dDEVICEHEIGHTPOINTS=774"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=w612h935" " -dDEVICEWIDTHPOINTS=612&&
+ -dDEVICEHEIGHTPOINTS=935"
+  Attribute "FoomaticRIPOptionSetting" "PageSize=w774h1116" " -dDEVICEWIDTHPOINTS=77&&
+4 -dDEVICEHEIGHTPOINTS=1116"
+  Attribute "FoomaticRIPOption" "Duplex" "enum CmdLine A"
+  Attribute "FoomaticRIPOptionSetting" "Duplex=DuplexNoTumble" " -dDuplex=true -dTum&&
+ble=false"
+  Attribute "FoomaticRIPOptionSetting" "Duplex=DuplexTumble" " -dDuplex=true -dTumbl&&
+e=true"
+  Attribute "FoomaticRIPOptionSetting" "Duplex=None" " -dDuplex=false"
+  Attribute "FoomaticRIPOption" "Quality" "enum CmdLine B"
+  Attribute "FoomaticRIPOptionSetting" "Quality=150BestColorCMYK" " -r150 -sIjsParam&&
+s=Quality:Quality=2,Quality:ColorMode=2,Quality:MediaType=0,Quality:Pe&&
+nSet=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=150ColorCMYK" " -r150 -sIjsParams=Qu&&
+ality:Quality=0,Quality:ColorMode=2,Quality:MediaType=0,Quality:PenSet&&
+=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=150DraftColorCMYK" " -r150 -sIjsPara&&
+ms=Quality:Quality=1,Quality:ColorMode=2,Quality:MediaType=0,Quality:P&&
+enSet=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=150DraftGrayscaleCMYK" " -r150 -sIjs&&
+Params=Quality:Quality=1,Quality:ColorMode=0,Quality:MediaType=0,Quali&&
+ty:PenSet=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=150GrayscaleCMYK" " -r150 -sIjsParam&&
+s=Quality:Quality=0,Quality:ColorMode=0,Quality:MediaType=0,Quality:Pe&&
+nSet=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=300BestColorCMYK" " -r300 -sIjsParam&&
+s=Quality:Quality=2,Quality:ColorMode=2,Quality:MediaType=0,Quality:Pe&&
+nSet=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=300ColorCMYK" " -r300 -sIjsParams=Qu&&
+ality:Quality=0,Quality:ColorMode=2,Quality:MediaType=0,Quality:PenSet&&
+=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=300GrayscaleCMYK" " -r300 -sIjsParam&&
+s=Quality:Quality=0,Quality:ColorMode=0,Quality:MediaType=0,Quality:Pe&&
+nSet=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=600BestColorCMYK" " -r600 -sIjsParam&&
+s=Quality:Quality=2,Quality:ColorMode=2,Quality:MediaType=0,Quality:Pe&&
+nSet=2"
+  Attribute "FoomaticRIPOptionSetting" "Quality=600GrayscaleCMYK" " -r600 -sIjsParam&&
+s=Quality:Quality=0,Quality:ColorMode=0,Quality:MediaType=0,Quality:Pe&&
+nSet=2"
+  Filter "application/vnd.cups-postscript 100 foomatic-rip"
+  Filter "application/vnd.cups-pdf 0 foomatic-rip"
+  Font "AvantGarde-Book" "Standard" "(001.006S)" "Standard" ROM
+  Font "AvantGarde-BookOblique" "Standard" "(001.006S)" "Standard" ROM
+  Font "AvantGarde-Demi" "Standard" "(001.007S)" "Standard" ROM
+  Font "AvantGarde-DemiOblique" "Standard" "(001.007S)" "Standard" ROM
+  Font "Bookman-Demi" "Standard" "(001.004S)" "Standard" ROM
+  Font "Bookman-DemiItalic" "Standard" "(001.004S)" "Standard" ROM
+  Font "Bookman-Light" "Standard" "(001.004S)" "Standard" ROM
+  Font "Bookman-LightItalic" "Standard" "(001.004S)" "Standard" ROM
+  Font "Courier" "Standard" "(002.004S)" "Standard" ROM
+  Font "Courier-Bold" "Standard" "(002.004S)" "Standard" ROM
+  Font "Courier-BoldOblique" "Standard" "(002.004S)" "Standard" ROM
+  Font "Courier-Oblique" "Standard" "(002.004S)" "Standard" ROM
+  Font "Helvetica" "Standard" "(001.006S)" "Standard" ROM
+  Font "Helvetica-Bold" "Standard" "(001.007S)" "Standard" ROM
+  Font "Helvetica-BoldOblique" "Standard" "(001.007S)" "Standard" ROM
+  Font "Helvetica-Narrow" "Standard" "(001.006S)" "Standard" ROM
+  Font "Helvetica-Narrow-Bold" "Standard" "(001.007S)" "Standard" ROM
+  Font "Helvetica-Narrow-BoldOblique" "Standard" "(001.007S)" "Standard" ROM
+  Font "Helvetica-Narrow-Oblique" "Standard" "(001.006S)" "Standard" ROM
+  Font "Helvetica-Oblique" "Standard" "(001.006S)" "Standard" ROM
+  Font "NewCenturySchlbk-Bold" "Standard" "(001.009S)" "Standard" ROM
+  Font "NewCenturySchlbk-BoldItalic" "Standard" "(001.007S)" "Standard" ROM
+  Font "NewCenturySchlbk-Italic" "Standard" "(001.006S)" "Standard" ROM
+  Font "NewCenturySchlbk-Roman" "Standard" "(001.007S)" "Standard" ROM
+  Font "Palatino-Bold" "Standard" "(001.005S)" "Standard" ROM
+  Font "Palatino-BoldItalic" "Standard" "(001.005S)" "Standard" ROM
+  Font "Palatino-Italic" "Standard" "(001.005S)" "Standard" ROM
+  Font "Palatino-Roman" "Standard" "(001.005S)" "Standard" ROM
+  Font "Symbol" "Special" "(001.007S)" "Special" ROM
+  Font "Times-Bold" "Standard" "(001.007S)" "Standard" ROM
+  Font "Times-BoldItalic" "Standard" "(001.009S)" "Standard" ROM
+  Font "Times-Italic" "Standard" "(001.007S)" "Standard" ROM
+  Font "Times-Roman" "Standard" "(001.007S)" "Standard" ROM
+  Font "ZapfChancery-MediumItalic" "Standard" "(001.007S)" "Standard" ROM
+  Font "ZapfDingbats" "Special" "(001.004S)" "Standard" ROM
+  Group "General/General"
+    Option "PrintoutMode/Print Quality" PickOne AnySetup 10,0
+      Choice "Draft/Draft" "%% FoomaticRIPOptionSetting: PrintoutMode=Draft"
+      Choice "Draft.Gray/Draft Grayscale" "%% FoomaticRIPOptionSetting: PrintoutMode=Draft.Gray"
+      *Choice "Normal/Normal" "%% FoomaticRIPOptionSetting: PrintoutMode=Normal"
+      Choice "Normal.Gray/Normal Grayscale" "%% FoomaticRIPOptionSetting: PrintoutMode=Normal.Gray"
+      Choice "High/High Quality" "%% FoomaticRIPOptionSetting: PrintoutMode=High"
+      Choice "High.Gray/High Quality Grayscale" "%% FoomaticRIPOptionSetting: PrintoutMode=High.Gray"
+    Option "InputSlot/Media Source" PickOne AnySetup 100,0
+      *Choice "Default/Printer Default" "%% FoomaticRIPOptionSetting: InputSlot=Default"
+      Choice "Upper/Upper Tray" "%% FoomaticRIPOptionSetting: InputSlot=Upper"
+      Choice "Lower/Lower Tray" "%% FoomaticRIPOptionSetting: InputSlot=Lower"
+      Choice "Envelope/Envelope Feeder" "%% FoomaticRIPOptionSetting: InputSlot=Envelope"
+      Choice "LargeCapacity/Large Capacity Tray" "%% FoomaticRIPOptionSetting: InputSlot=LargeCapacity"
+      Choice "Manual/Manual Feeder" "%% FoomaticRIPOptionSetting: InputSlot=Manual"
+      Choice "MPTray/Multipurpose Tray" "%% FoomaticRIPOptionSetting: InputSlot=MPTray"
+    Option "Duplex/Double-Sided Printing" PickOne AnySetup 120,0
+      Choice "DuplexNoTumble/Flip on Long Edge (Standard)" "%% FoomaticRIPOptionSetting: Duplex=DuplexNoTumble"
+      Choice "DuplexTumble/On (Flip on Short Edge)" "%% FoomaticRIPOptionSetting: Duplex=DuplexTumble"
+      Choice "None/Off" "%% FoomaticRIPOptionSetting: Duplex=None"
+      Choice "DuplexNoTumble/Long Edge (Standard)" "%% FoomaticRIPOptionSetting: Duplex=DuplexNoTumble"
+      Choice "DuplexTumble/Short Edge (Flip)" "%% FoomaticRIPOptionSetting: Duplex=DuplexTumble"
+      *Choice "None/Off" "%% FoomaticRIPOptionSetting: Duplex=None"
+  Group "PrintoutMode/Printout Mode"
+    Option "Quality/Resolution, Quality" PickOne AnySetup 100,0
+      *Choice "FromPrintoutMode/Controlled by 'Print Quality'" "%% FoomaticRIPOptionSetting: Quality=@PrintoutMode"
+      Choice "150BestColorCMYK/150 dpi, Best, Color" "%% FoomaticRIPOptionSetting: Quality=150BestColorCMYK"
+      Choice "150ColorCMYK/150 dpi, Color" "%% FoomaticRIPOptionSetting: Quality=150ColorCMYK"
+      Choice "150DraftColorCMYK/150 dpi, Draft, Color" "%% FoomaticRIPOptionSetting: Quality=150DraftColorCMYK"
+      Choice "150DraftGrayscaleCMYK/150 dpi, Draft, Grayscale" "%% FoomaticRIPOptionSetting: Quality=150DraftGrayscaleCMYK"
+      Choice "150GrayscaleCMYK/150 dpi, Grayscale" "%% FoomaticRIPOptionSetting: Quality=150GrayscaleCMYK"
+      Choice "300BestColorCMYK/300 dpi, Best, Color" "%% FoomaticRIPOptionSetting: Quality=300BestColorCMYK"
+      Choice "300ColorCMYK/300 DPI, Color" "%% FoomaticRIPOptionSetting: Quality=300ColorCMYK"
+      Choice "300GrayscaleCMYK/300 dpi, Grayscale" "%% FoomaticRIPOptionSetting: Quality=300GrayscaleCMYK"
+      Choice "600BestColorCMYK/600 dpi, Best, Color" "%% FoomaticRIPOptionSetting: Quality=600BestColorCMYK"
+      Choice "600GrayscaleCMYK/600 DPI, Grayscale" "%% FoomaticRIPOptionSetting: Quality=600GrayscaleCMYK"
+  *CustomMedia "Letter/Letter" 612,00 792,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Letter" "%% FoomaticRIPOptionSetting: PageSize=Letter"
+  CustomMedia "A4/A4" 595,00 842,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=A4" "%% FoomaticRIPOptionSetting: PageSize=A4"
+  CustomMedia "Photo/Photo or 4x6 inch index card" 288,00 432,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Photo" "%% FoomaticRIPOptionSetting: PageSize=Photo"
+  CustomMedia "Photo5x7/Photo or 5x7 inch index card" 360,00 504,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Photo5x7" "%% FoomaticRIPOptionSetting: PageSize=Photo5x7"
+  CustomMedia "3x5/3x5 inch index card" 216,00 360,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=3x5" "%% FoomaticRIPOptionSetting: PageSize=3x5"
+  CustomMedia "5x8/5x8 inch index card" 360,00 576,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=5x8" "%% FoomaticRIPOptionSetting: PageSize=5x8"
+  CustomMedia "A3/A3" 842,00 1190,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=A3" "%% FoomaticRIPOptionSetting: PageSize=A3"
+  CustomMedia "A5/A5" 420,00 595,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=A5" "%% FoomaticRIPOptionSetting: PageSize=A5"
+  CustomMedia "A6/A6" 297,00 420,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=A6" "%% FoomaticRIPOptionSetting: PageSize=A6"
+  CustomMedia "B4JIS/B4 (JIS)" 729,00 1033,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=B4JIS" "%% FoomaticRIPOptionSetting: PageSize=B4JIS"
+  CustomMedia "B5JIS/B5 (JIS)" 516,00 729,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=B5JIS" "%% FoomaticRIPOptionSetting: PageSize=B5JIS"
+  CustomMedia "Env10/Envelope #10" 297,00 684,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Env10" "%% FoomaticRIPOptionSetting: PageSize=Env10"
+  CustomMedia "EnvC5/Envelope C5" 459,00 649,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=EnvC5" "%% FoomaticRIPOptionSetting: PageSize=EnvC5"
+  CustomMedia "EnvC6/Envelope C6" 323,00 459,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=EnvC6" "%% FoomaticRIPOptionSetting: PageSize=EnvC6"
+  CustomMedia "EnvDL/Envelope DL" 312,00 624,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=EnvDL" "%% FoomaticRIPOptionSetting: PageSize=EnvDL"
+  CustomMedia "EnvISOB5/Envelope B5" 499,00 709,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=EnvISOB5" "%% FoomaticRIPOptionSetting: PageSize=EnvISOB5"
+  CustomMedia "EnvMonarch/Envelope Monarch" 279,00 540,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=EnvMonarch" "%% FoomaticRIPOptionSetting: PageSize=EnvMonarch"
+  CustomMedia "Executive/Executive" 522,00 756,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Executive" "%% FoomaticRIPOptionSetting: PageSize=Executive"
+  CustomMedia "FLSA/American Foolscap" 612,00 936,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=FLSA" "%% FoomaticRIPOptionSetting: PageSize=FLSA"
+  CustomMedia "Hagaki/Hagaki" 283,00 420,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Hagaki" "%% FoomaticRIPOptionSetting: PageSize=Hagaki"
+  CustomMedia "Ledger/Ledger" 792,00 1224,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Ledger" "%% FoomaticRIPOptionSetting: PageSize=Ledger"
+  CustomMedia "Legal/Legal" 612,00 1008,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Legal" "%% FoomaticRIPOptionSetting: PageSize=Legal"
+  CustomMedia "Oufuku/Oufuku-Hagaki" 420,00 567,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=Oufuku" "%% FoomaticRIPOptionSetting: PageSize=Oufuku"
+  CustomMedia "SuperB/Super B" 936,00 1368,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=SuperB" "%% FoomaticRIPOptionSetting: PageSize=SuperB"
+  CustomMedia "w558h774/16K" 558,00 774,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=w558h774" "%% FoomaticRIPOptionSetting: PageSize=w558h774"
+  CustomMedia "w612h935/Executive (JIS)" 612,00 935,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=w612h935" "%% FoomaticRIPOptionSetting: PageSize=w612h935"
+  CustomMedia "w774h1116/8K" 774,00 1116,00 18,00 14,40 18,00 14,40 "%% FoomaticRIPOptionSetting: PageSize=w774h1116" "%% FoomaticRIPOptionSetting: PageSize=w774h1116"
+  VariablePaperSize Yes
+  HWMargins 18,00 14,40 18,00 14,40
+  MinSize 36,00 36,00
+  MaxSize 100000,00 100000,00
+}
